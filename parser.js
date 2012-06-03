@@ -7,7 +7,7 @@
         for (var key in obj) {
             var val = obj[key];
 
-	    if (key === 'content')
+	    if (key === '_content')
                 el.innerHTML = val;
 	    else if (typeof val === 'object')
                 el.appendChild(parseToHtml(val, key));
